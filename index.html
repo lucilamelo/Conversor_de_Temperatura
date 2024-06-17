@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+    <link rel="shortcut icon" href="img/icone-temperatura.png">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="navbar_logo"> <img src="img/termometro.png"> </div>
+
+        <a href="#" class="navbar_button">
+            <span class="bar" id="top"></span>
+            <span class="bar" id="center"></span>
+            <span class="bar" id="botton"></span>
+        </a>
+
+        <div class="navbar_links">
+            <ul>
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">Contato</a> </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="drop_button">
+                            Conversor &#9660;
+                        </button>
+                        <div class="drop_content">
+                            <a href="">Celsius para Fahrenheit</a>
+                            <a href="">Celsius para Kelvin</a>
+                            <a href="">Kelvin para Fahrenheit</a>
+                            <a href="">Fahrenheit para Kelvin</a>
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="">Quem somos</a> </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="conteudo">
+            <h1>CONVERSOR DE TEMPERATURA</h1>
+            <h3> Celsius para fahrenheit <br> Celsius para kelvin</h3>
+        </div>
+
+        <div class="content">
+            <h3>Converter Temperatura</h3>
+
+            <input type="number" placeholder="Celsius" id="celsius">
+
+            <input type="submit" value="Converter" onclick="conversor_de_temperatura()">
+
+            <div id="resp"></div>
+        </div>
+
+        <h1 id="c">Escalas Termométricas</h1>
+        <hr>
+        <p>As escalas termométricas indicam o nível de temperatura ou de energia térmica de um corpo, sendo que podem
+            ser três: graus Celsius, kelvin e Fahrenheit.</p>
+        <img
+            src="img/termometro-marcando-temperatura-em-local-frio-em-duas-escalas-termometricas-diferentes-na-parte-externa-ha-30-f-na-parte-interna-333-c-591ad7db5ad56.webp">
+        <p>Termômetro marcando temperatura em local frio em duas escalas termométricas diferentes. Na parte externa, há
+            -30 ºF, e na parte interna, -33,3 ºC</p>
+
+
+
+        <div class="conversor_de_temperatura">
+            <div class="celsius">
+
+                <h3>CELSIUS</h3>
+                <hr>
+
+                <p>A escala Celsius tem dois pontos fixos.
+
+                    A temperatura de uma mistura de água líquida e gelo em equilíbrio é definida como sendo zero grau
+                    Celsius (0 oC)
+                    e a temperatura de uma mistura de água líquida e vapor em equilíbrio é definida como sendo cem graus
+                    Celsius (100 oC).
+                    A escala Celsius é linear e centígrada.
+                    Quando a diferença de temperatura entre os dois pontos fixos é dividida em cem partes,
+                    a escala fica definida como centígrada. Quando as cem partes são tomadas como sendo todas iguais,
+                    definimos, para a escala Celsius, uma lei linear.
+                    Portanto, a escala Celsius tem dois pontos fixos, é linear e centígrada.</p>
+            </div>
+
+            <div class="fahrenheit">
+
+                <h3>FAHRENHEIT</h3>
+                <hr>
+
+                <p>Esta escala foi criada pelo inventor Daniel Gabriel Fahrenheit em meados dos anos de 1714 (Daniel
+                    também foi o inventor do termômetro de mercúrio).
+                    Para tanto ele determinou dois pontos iniciais (pontos fixos). Ele introduziu seu termômetro, ainda
+                    sem nenhuma escala, dentro de uma mistura de água, gelo e sal de amônia.
+                    O mercúrio se deslocou dentro do termômetro até parar em determinada posição, a qual ele marcou e
+                    chamou de zero. O segundo ponto fixo ele obteve ao medir a temperatura do corpo humano,
+                    fazendo com que o mercúrio parasse num segundo ponto. Quando isso aconteceu, Fahrenheit marcou a
+                    segunda posição e a chamou de 100. Após isto, ele dividiu a distância entre os dois pontos por 100 e
+                    teve então sua escala criada.
+                    Ao medir a temperatura da fusão do gelo em água na sua nova escala Fahrenheit achou o correspondente
+                    a 32ºF, enquanto, a temperatura de ebulição da água era de 212ºF. Essa escala é a mais utilizada nos
+                    países oriundos da língua inglesa.</p>
+            </div>
+
+            <div class="kelvin">
+                <h3>KELVIN</h3>
+                <hr>
+                <p>Esta é uma escala absoluta de medição de temperatura pelo seguinte motivo: como a temperatura de um
+                    corpo está intimamente relacionada com a agitação dos elétrons
+                    do mesmo corpo, é de esperar que a temperatura de zero grau ocorra em uma situação na qual
+                    praticamente não houvesse movimento dos elétrons.Essa condição é inatingível na prática,
+                    mas, caso fosse, a pressão exercida por um gás na parede interna do recipiente, onde o mesmo se
+                    encontraria, seria zero, uma vez que não haveria mais agitação e colisões das moléculas com as
+                    paredes do recipiente.
+                    “A utilização de modelos matemáticos e físicos permitiu que fosse determinada a temperatura para a
+                    qual a pressão de um gás fosse zero. E, essa temperatura foi de -273,15°C, a qual passou a ser
+                    chamada de zero Kelvin ou zero absoluto,
+                    afirma Dr. José Arnaldo Duarte, professor do Curso CPT Básico de Refrigeração.. </p>
+            </div>
+
+        </div>
+        <img src="img/representacao-das-escalas-termometricas-kelvin-celsius-e-fahrenheit.webp">
+    </div>
+
+    <div class="footer">
+        <p> &copy; Desenvolvido por Lucila Melo - 2024 </p>
+    </div>
+
+</body>
+
+</html>
